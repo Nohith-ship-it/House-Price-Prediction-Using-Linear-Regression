@@ -1,0 +1,31 @@
+# Import libraries
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+# Load dataset
+data = pd.read_csv("house_data_extended.csv")
+
+# Features and target
+X = data[['sqft', 'bedrooms', 'bathrooms', 'floors', 'age', 'location_score']]
+y = data['price']
+
+# Train model
+model = LinearRegression()
+model.fit(X, y)
+
+# User input
+print("Enter house details:")
+
+sqft = float(input("Square footage: "))
+bedrooms = int(input("Bedrooms: "))
+bathrooms = int(input("Bathrooms: "))
+floors = int(input("Number of floors: "))
+age = int(input("Age of house (years): "))
+location = int(input("Location score (1-10): "))
+
+# Prediction
+user_data = [[sqft, bedrooms, bathrooms, floors, age, location]]
+predicted_price = model.predict(user_data)
+
+# Output
+print("\nPredicted House Price: ₹", round(predicted_price[0], 2))
