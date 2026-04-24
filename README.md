@@ -28,10 +28,12 @@ floors	Number of floors
 age	Age of the house (years)
 location_score	Location quality (1–10 scale)
 price	Target variable (house price)
+
 ⚙️ Technologies Used
 Python
 Pandas – Data handling
 Scikit-learn – Machine learning model
+
 🔄 Project Workflow
 Data Collection (CSV file)
 Data Loading using Pandas
@@ -55,8 +57,10 @@ project/
 ├── house_data_extended.csv
 ├── house_price_prediction.py
 └── README.md
+
 3️⃣ Run the Program
 python house_price_prediction.py
+
 💻 Example Usage
 Enter house details:
 Square footage: 2100
@@ -67,20 +71,24 @@ Age of house (years): 3
 Location score (1-10): 8
 
 Predicted House Price: ₹ 500000.00
+
 📊 Key Features of the Project
 User-friendly input system
 Multi-feature prediction model
 Simple and understandable code
 Suitable for beginners
+
 🚀 Future Enhancements
 Add more real-world data
 Include graphical visualization (matplotlib)
 Use advanced models (Random Forest, XGBoost)
 Build a web app using Flask or Streamlit
+
 ⚠️ Limitations
 Uses a small dataset
 Accuracy depends on data quality
 Linear Regression assumes linear relationships
+
 📚 Conclusion
 
 This project demonstrates how machine learning can be used to predict house prices using multiple influencing factors. It serves as a foundational project for beginners to understand regression models.
